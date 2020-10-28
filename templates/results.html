@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Results</title>
+	</head>
+	<body>
+		<h1>Search Results</h1>
+		
+		<ol>
+			{% for book in books %}
+				<li>
+					<a href="{{url_for('book',book_num=book.isbn)}}">{{ book.title }}</a>
+				</li>
+			{% endfor %}
+		</ol>
+	</body>
+</html>

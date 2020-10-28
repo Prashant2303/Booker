@@ -1,0 +1,11 @@
+Host	ec2-54-83-9-36.compute-1.amazonaws.com
+Database	d4dvrsd3bierl5
+User	nolqsvfmgskuqa
+Port	5432
+Password	f9f9f15a6cccafaee7119d03ac1e0bea620fffe7a914acb58368566d52f49426
+URI
+postgres://nolqsvfmgskuqa:f9f9f15a6cccafaee7119d03ac1e0bea620fffe7a914acb58368566d52f49426@ec2-54-83-9-36.compute-1.amazonaws.com:5432/d4dvrsd3bierl5
+Heroku CLI
+heroku pg:psql postgresql-curved-88010 --app prashant23
+
+API KEY : PGKpdo40NGG3UYKK15b1rQ

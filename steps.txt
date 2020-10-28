@@ -1,0 +1,13 @@
+1. install venv = py -m venv env
+2. Activate venv - env\Scripts\activate
+3. install Flask - pip install flask
+4. install Flask-sessions - pip install flask-sessions
+5. install Flask-SQLAlchemy - pip install flask-SQLAlchemy
+6. install psycopg2 - pip install psycopg2
+install requests too
+
+To start app:-
+7. set FLASK_APP=application.py
+8. set DEBUG_MODE=1
+9. set DATABASE_URL=postgres://nolqsvfmgskuqa:f9f9f15a6cccafaee7119d03ac1e0bea620fffe7a914acb58368566d52f49426@ec2-54-83-9-36.compute-1.amazonaws.com:5432/d4dvrsd3bierl5
+10. flask run

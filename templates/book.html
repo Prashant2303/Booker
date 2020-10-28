@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Book</title>
+	</head>
+	<body>
+		<!-- {% for isbn,title,author,year in book %} -->
+			<h1>{{ title }}</h1>
+			<ul>
+				<li>isbn   : {{ isbn }} </li> 
+				<li>Author : {{ author }} </li>
+				<li>Publication Year : {{ year }} </li>
+			</ul>
+		<!-- {% endfor %} -->
+			<ul>
+				<li>Rating : {{ rating }} </li> 
+				<li>No. of Ratings : {{ count }} </li>
+			</ul>
+		{% for review in reviews %}
+			<h2>User Reviews</h2>
+			<ol>
+				<li>{{ review.review }} by User:{{ review.username }}</li>
+			</ol>
+		{% endfor %}
+		<form action="{{url_for('book',book_num=isbn)}}">
+			<textarea rows="3" cols="90" placeholder="Your Review" name="review"></textarea>
+			<Button>Submit</Button>
+		</form>
+	</body>
+</html>
